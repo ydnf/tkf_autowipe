@@ -1,5 +1,7 @@
 # tkf_autowipe
 
+STICTEMENT INTERDET DE MODIFIER ET DIRE QUE C'EST LE SIENS 
+
 Ce script a été crée pour SuniSland-RP https://discord.gg/TkYuShH
 
 Autowipe ?
