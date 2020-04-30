@@ -1,6 +1,10 @@
 fx_version('adamant')
 game('gta5')
 
+author 'TakeFy'
+description 'AutoWipe for FiveM'
+version '1.0'
+
 client_scripts {
 	"NativeUILua/Wrapper/Utility.lua",
 
