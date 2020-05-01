@@ -17,7 +17,7 @@ mettez le script dans votre dossier ressource
 dans votre server.cfg faites start tkf_autowipe
 
 #############Utilisation####################
-
+/restart tkf_atowipe avant utilisation
 /wipe dans le chat
 
 Dans la case steam ID il faut entrer que les chiffres 9 dernier chiffre du steam id par exemple ici "steam:11000033276e4d7" les 9 derniers que je vais entrer sont "33276e4d7" 
