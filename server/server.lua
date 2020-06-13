@@ -43,7 +43,7 @@ AddEventHandler('aw:wipe', function(data)
 	}, function(rowsChanged)
 		table.insert(WipeData, data)
 		SaveResourceFile('tkf_autowipe', 'data.json', json.encode(WipeData))
-		print('^2wipe with effectued^0')
+		print('^2wipe effectued successly^0')
 	end)
 end)
 
