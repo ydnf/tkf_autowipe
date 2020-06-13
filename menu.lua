@@ -85,7 +85,7 @@ function DrawWipeMenu()
 			end
 
 			TriggerServerEvent('aw:wipe', WipeData)
-			ShowNotification('Wipe effectué ! (Le personnage sera wipe au prochain reboot ! )')
+			ShowNotification('Wipe effectué ! (Le personnage sera wipe a sa prochaine connection ! )')
 			end
 		end
 
