@@ -14,6 +14,8 @@ mettez le script dans votre dossier ressource
 
 dans votre server.cfg faites start tkf_autowipe
 
+addaptez le server.lua de la ligne 19 à 40 en supprimant les lignes qui correspondent aux tables sql que vous n'avez pas 
+
 #############Utilisation####################
 
 /wipe dans le chat
