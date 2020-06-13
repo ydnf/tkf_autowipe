@@ -1,6 +1,10 @@
 fx_version('adamant')
 game('gta5')
 
+author 'TakeFy'
+description 'Autowipe by TakeFy'
+version '1.2'
+
 client_scripts {
 	"NativeUILua/Wrapper/Utility.lua",
 
@@ -23,16 +27,19 @@ client_scripts {
 	"NativeUILua/UIMenu/MenuPool.lua",
 	
 	"NativeUILua/NativeUI.lua",
-}
 
-client_scripts {
 	'@es_extended/locale.lua',
-	'menu.lua',
-	
+	"client/menu.lua",
+	'locales/en.lua',
+	'locales/fr.lua',
+	'config.lua',
+	"client/main.lua"
+
 }
 
 server_scripts {
 	'@es_extended/locale.lua',
 	'@mysql-async/lib/MySQL.lua',
-	'builder_s.lua',
+	'server/server.lua'
+
 }
