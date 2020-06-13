@@ -1,10 +1,6 @@
 fx_version('adamant')
 game('gta5')
 
-author 'TakeFy'
-description 'AutoWipe for FiveM'
-version '1.0'
-
 client_scripts {
 	"NativeUILua/Wrapper/Utility.lua",
 
@@ -38,5 +34,5 @@ client_scripts {
 server_scripts {
 	'@es_extended/locale.lua',
 	'@mysql-async/lib/MySQL.lua',
-	'wipe_s.lua',
+	'builder_s.lua',
 }

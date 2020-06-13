@@ -1,5 +1,6 @@
 
 ESX = nil TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+
 _menuPool = NativeUI.CreatePool()
 mainWipeMenu = NativeUI.CreateMenu('Auto Wipe', 'Actions', nil, nil, nil, nil, nil, 180, 0, 0)
 _menuPool:Add(mainWipeMenu)
@@ -84,7 +85,7 @@ function DrawWipeMenu()
 			end
 
 			TriggerServerEvent('aw:wipe', WipeData)
-			ShowNotification('Wipe effectué ! (Le personnage sera wipe a sa prochaine connection ! )')
+			ShowNotification('Wipe effectué ! (Le personnage sera wipe au prochain reboot ! )')
 			end
 		end
 
@@ -117,7 +118,7 @@ end)
 
 RegisterCommand('wipe', function(source)
 	ESX.TriggerServerCallback('KorioZ-PersonalMenu:Admin_getUsergroup', function(plyGroup)
-		if plyGroup ~= nil and (plyGroup == 'admin' or plyGroup == 'superadmin' or plyGroup == 'owner' or plyGroup == '_dev') then
+		if plyGroup ~= nil and (plyGroup == 'admin' or plyGroup == 'superadmin' or plyGroup == 'server' or plyGroup == '_dev') then
 			TriggerEvent('aw:OpenMenu', source)
 		else
 			ESX.ShowNotification('Vous devez être ~r~Admin ~w~pour pouvoir utiliser le ~g~AutoWipe.')
