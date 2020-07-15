@@ -12,9 +12,14 @@ télécharger la derniere version de tkf_autowipe sur github
 
 mettez le script dans votre dossier ressource 
 
-dans votre server.cfg faites start tkf_autowipe
+mettez ce qui se trouve dans le dossier permission où il y a votre server.cfg
 
-adapter le server.lua de la ligne 19 à 40 en supprimant les lignes qui correspondent aux tables sql que vous n'avez pas 
+ouvrez le fichier tkf_autowipe_perm.cfg et remplacer "your_steam_id" par votre steam id
+
+dans votre server.cfg faites ensure tkf_autowipe et exec tkf_autowipe_perm.cfg
+
+adapter le server.lua de la ligne 19 à 40 en supprimant les lignes qui correspondent aux tables sql que vous n'avez pas
+
 
 #############Utilisation####################
 
@@ -45,7 +50,13 @@ Download the latest version of tkf_autowipe on github
 
 put the script in your resource folder
 
-in your server.cfg start tkf_autowipe
+put what is in the permission folder where there is your server.cfg file
+
+open the file tkf_autowipe_perm.cfg and replace "your_steam_id" with your steam id
+
+in your server.cfg put the line ensure tkf_autowipe and exec tkf_autowipe_perm.cfg
+
+adapt the server.lua from line 19 to 40 by removing rows that match the sql tables you don’t have
 
 #############Utilisation####################
 

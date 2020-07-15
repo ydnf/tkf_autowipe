@@ -1,5 +1,14 @@
 ESX = nil
 
+RegisterServerEvent('aw:perm')
+AddEventHandler('aw:perm', function(perm)
+ 	if IsPlayerAceAllowed(source, "menu.wipe") then
+		TriggerClientEvent('aw:OpenMenu', source)
+	else
+		TriggerClientEvent('no-perm', source)
+	end
+end)
+
 
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)

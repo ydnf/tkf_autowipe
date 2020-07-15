@@ -3,6 +3,7 @@ mainWipeMenu = NativeUI.CreateMenu('Auto Wipe', 'Actions', nil, nil, nil, nil, n
 _menuPool:Add(mainWipeMenu)
 
 ActualWipe = nil
+
 RegisterNetEvent('aw:SyncWipe')
 AddEventHandler('aw:SyncWipe', function(data)
 	ActualWipe = data
@@ -114,13 +115,14 @@ AddEventHandler('aw:OpenMenu', function()
 	mainWipeMenu:Visible(true)
 end)
 
+RegisterNetEvent("no-perm")
+AddEventHandler("no-perm", function()
+	ESX.ShowNotification(_U('err_admin'))
+end)
+
+
 RegisterCommand('wipe', function(source)
 	ESX = nil TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-	ESX.TriggerServerCallback('KorioZ-PersonalMenu:Admin_getUsergroup', function(plyGroup)
-		if plyGroup ~= nil and (plyGroup == 'admin' or plyGroup == 'superadmin' or plyGroup == 'server' or plyGroup == '_dev') then
-			TriggerEvent('aw:OpenMenu', source)
-		else
-			ESX.ShowNotification(_U('err_admin'))
-		end
-	end)
-end, false)
+	TriggerServerEvent('aw:perm')
+end)
+
